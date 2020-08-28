@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cute Exporter Docs</title>
+    <link>https://cuteexporter.com/docs/</link>
+    <description>Recent content on Cute Exporter Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cuteexporter.com/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating a project</title>
+      <link>https://cuteexporter.com/docs/docs/basics/creating-a-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cuteexporter.com/docs/docs/basics/creating-a-project/</guid>
+      <description>Creating a Project #  On the landing page of Cute Exporter, click Create Project.
+Choose where you would like to save your project file. The same folder as your raw PSD or Asesprite assets is a good place. By default it will be named assets.db but you can name it whatever you want.
+The project file can be saved anywhere but all the assets you add to your project will be referenced relative to where your project file is saved.</description>
+    </item>
+    
+    <item>
+      <title>Adding files</title>
+      <link>https://cuteexporter.com/docs/docs/basics/adding-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cuteexporter.com/docs/docs/basics/adding-files/</guid>
+      <description>Adding Files to your project #  After creating a project you should add some files to it. Supported files types are:
+ Photoshop files (.psd) Aseprite files (.ase or .aseprite) PNG (.png) JPEG (.jpeg)  To add a file go to your your project main page and cick Add File.
+If you aren&amp;rsquo;t on your homepage click on the Files button on the left sidebar  Alternatively, on your project main page, you can drag and drop and supported file type into the Cute Exporter window.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cuteexporter.com/docs/docs/basics/previewing-texture-atlas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cuteexporter.com/docs/docs/basics/previewing-texture-atlas/</guid>
+      <description>Previewing Your Texture Atlas #  You can preview what the resulting texture atlas of your project will look like at any time by clicking the Preview button on the top row of the app.
+This preview will open a modal that display what your resulting texture atlas will look like when exported.
+The preview is not to scale. You can see the final output size on the left side of the preview modal.</description>
+    </item>
+    
+  </channel>
+</rss>
