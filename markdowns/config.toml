@@ -1,0 +1,6 @@
+baseURL = "https://cuteexporter.com/docs"
+languageCode = "en-us"
+title = "Cute Exporter Docs"
+theme = "book"
+[params]
+BookToC = true
