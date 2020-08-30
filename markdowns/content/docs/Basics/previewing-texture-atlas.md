@@ -1,3 +1,7 @@
+---
+title: Previewing Your Texture Atlas
+weight: 5
+---
 # Previewing Your Texture Atlas
 
 You can preview what the resulting texture atlas of your project will look like at any time by clicking the `Preview` button on the top row of the app.
@@ -14,4 +18,4 @@ The preview is not to scale. You can see the final output size on the left side 
 
 {{< /hint >}}
 
-Up Next: [Exporting]({{< ref "" >}})
+Up Next: [Exporting]({{< ref "exporting-basics.md" >}})
