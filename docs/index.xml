@@ -54,5 +54,16 @@ Cute Exporter also has a CLI that you can use to export your images from the com
 The exported files #  By default the exported files will be saved to the same folder your project file is in.</description>
     </item>
     
+    <item>
+      <title>Layers</title>
+      <link>https://cuteexporter.com/docs/docs/assets/layers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cuteexporter.com/docs/docs/assets/layers/</guid>
+      <description>Layers #  Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.
+Layer settings #  Layers have a few settings that will affect how they are output.
+Layer Export #  When you export your project, each active layer image is saved to the texture atlas and an entry for that layer is put in the output json file.</description>
+    </item>
+    
   </channel>
 </rss>

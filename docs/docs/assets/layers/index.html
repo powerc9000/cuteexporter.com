@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Creating a Project #  On the landing page of Cute Exporter, click Create Project.
-Choose where you would like to save your project file. The same folder as your raw PSD or Asesprite assets is a good place. By default it will be named assets.db but you can name it whatever you want.
-The project file can be saved anywhere but all the assets you add to your project will be referenced relative to where your project file is saved.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Creating a project" />
-<meta property="og:description" content="Creating a Project #  On the landing page of Cute Exporter, click Create Project.
-Choose where you would like to save your project file. The same folder as your raw PSD or Asesprite assets is a good place. By default it will be named assets.db but you can name it whatever you want.
-The project file can be saved anywhere but all the assets you add to your project will be referenced relative to where your project file is saved." />
+<meta name="description" content="Layers #  Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.
+Layer settings #  Layers have a few settings that will affect how they are output.
+Layer Export #  When you export your project, each active layer image is saved to the texture atlas and an entry for that layer is put in the output json file.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Layers" />
+<meta property="og:description" content="Layers #  Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.
+Layer settings #  Layers have a few settings that will affect how they are output.
+Layer Export #  When you export your project, each active layer image is saved to the texture atlas and an entry for that layer is put in the output json file." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cuteexporter.com/docs/docs/basics/creating-a-project/" />
+<meta property="og:url" content="https://cuteexporter.com/docs/docs/assets/layers/" />
 
-<title>Creating a project | Cute Exporter Docs</title>
+<title>Layers | Cute Exporter Docs</title>
 <link rel="manifest" href="/docs/manifest.json">
 <link rel="icon" href="/docs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/docs/book.min.6cd8553a6854f4812343f0f0c8baca31271e686434f381fbe3c7226f66639176.css" integrity="sha256-bNhVOmhU9IEjQ/DwyLrKMSceaGQ084H748cib2ZjkXY=">
@@ -87,7 +87,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/docs/basics/creating-a-project/" class="active">Creating a project</a>
+    <a href="/docs/docs/basics/creating-a-project/" class="">Creating a project</a>
   
 
         </li>
@@ -169,7 +169,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/docs/assets/layers/" class="">Layers</a>
+    <a href="/docs/docs/assets/layers/" class="active">Layers</a>
   
 
         </li>
@@ -217,7 +217,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/docs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Creating a project</strong>
+  <strong>Layers</strong>
 
   <label for="toc-control">
     
@@ -230,7 +230,16 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#layer-settings">Layer settings</a></li>
+    <li><a href="#layer-export">Layer Export</a>
+      <ul>
+        <li><a href="#json-example">JSON example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
   </aside>
@@ -240,22 +249,48 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="creating-a-project">
-  Creating a Project
-  <a class="anchor" href="#creating-a-project">#</a>
+  <article class="markdown"><h1 id="layers">
+  Layers
+  <a class="anchor" href="#layers">#</a>
 </h1>
-<p>On the landing page of Cute Exporter, click <code>Create Project</code>.</p>
-<p><img src="/docs/img/create-project-button-click.png" alt="Landing page" /></p>
-<p>Choose where you would like to save your project file. The same folder as your raw PSD or Asesprite assets is a good place.
-By default it will be named <code>assets.db</code> but you can name it whatever you want.</p>
-<p><img src="/docs/img/file-dialog-select.png" alt="File dialog" /></p>
-<p>The project file can be saved anywhere but all the assets you add to your project will be referenced relative to where your project file is saved.</p>
-<hr>
-<blockquote class="book-hint info">
-  The project file is an sqlite database file. You can read more about that <a href="">here</a>.
-</blockquote>
-
-<p>Next Up <a href="https://cuteexporter.com/docs/docs/basics/adding-files/">Adding Files</a></p>
+<p>Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.</p>
+<h2 id="layer-settings">
+  Layer settings
+  <a class="anchor" href="#layer-settings">#</a>
+</h2>
+<p>Layers have a few settings that will affect how they are output.</p>
+<h2 id="layer-export">
+  Layer Export
+  <a class="anchor" href="#layer-export">#</a>
+</h2>
+<p>When you <a href="https://cuteexporter.com/docs/docs/basics/exporting-basics/">export your project</a>, each active layer image is saved to the texture atlas and an entry for that layer is put in the output json file.</p>
+<h3 id="json-example">
+  JSON example
+  <a class="anchor" href="#json-example">#</a>
+</h3>
+<p>In the output json file there is an array of <code>assets</code> each active layer is listed there.</p>
+<pre><code>{
+   &quot;id&quot;:&quot;1&quot;,
+   &quot;name&quot;:&quot;folder&quot;,
+   &quot;parentPath&quot;:&quot;raw/icons.psd&quot;,
+   &quot;width&quot;:173,
+   &quot;height&quot;:128,
+   &quot;x&quot;:191,
+   &quot;y&quot;:623,
+   &quot;layerPos&quot;:{
+      &quot;x&quot;:0,
+      &quot;y&quot;:0,
+      &quot;width&quot;:0,
+      &quot;height&quot;:0
+   },
+   &quot;tags&quot;:[
+      
+   ],
+   &quot;animationName&quot;:&quot;&quot;,
+   &quot;animationId&quot;:0,
+   &quot;frameNumber&quot;:-1
+}
+</code></pre><p>You can read about each section in the entry <a href="https://cuteexporter.com/docs/docs/basics/exporting-basics/#assets-section">here.</a></p>
 </article>
  
       
@@ -288,7 +323,16 @@ By default it will be named <code>assets.db</code> but you can name it whatever 
     
     <aside class="book-toc">
       
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#layer-settings">Layer settings</a></li>
+    <li><a href="#layer-export">Layer Export</a>
+      <ul>
+        <li><a href="#json-example">JSON example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
  
     </aside>

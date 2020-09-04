@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assets on Cute Exporter Docs</title>
+    <link>https://cuteexporter.com/docs/docs/assets/</link>
+    <description>Recent content in Assets on Cute Exporter Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cuteexporter.com/docs/docs/assets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Layers</title>
+      <link>https://cuteexporter.com/docs/docs/assets/layers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cuteexporter.com/docs/docs/assets/layers/</guid>
+      <description>Layers #  Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.
+Layer settings #  Layers have a few settings that will affect how they are output.
+Layer Export #  When you export your project, each active layer image is saved to the texture atlas and an entry for that layer is put in the output json file.</description>
+    </item>
+    
+  </channel>
+</rss>
