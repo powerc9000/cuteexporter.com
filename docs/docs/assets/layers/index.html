@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Layers #  Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.
-Layer settings #  Layers have a few settings that will affect how they are output.
-Layer Export #  When you export your project, each active layer image is saved to the texture atlas and an entry for that layer is put in the output json file.">
+Editing layer data and settings #  You can edit the data and settings for your layer by finding it in the layer list of your asset and clicking edit
+Layer Active #  The active checkbox sets if the layer should be saved to the final output or not.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Layers" />
 <meta property="og:description" content="Layers #  Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.
-Layer settings #  Layers have a few settings that will affect how they are output.
-Layer Export #  When you export your project, each active layer image is saved to the texture atlas and an entry for that layer is put in the output json file." />
+Editing layer data and settings #  You can edit the data and settings for your layer by finding it in the layer list of your asset and clicking edit
+Layer Active #  The active checkbox sets if the layer should be saved to the final output or not." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cuteexporter.com/docs/docs/assets/layers/" />
 
@@ -18,7 +18,7 @@ Layer Export #  When you export your project, each active layer image is saved t
 <link rel="manifest" href="/docs/manifest.json">
 <link rel="icon" href="/docs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/docs/book.min.6cd8553a6854f4812343f0f0c8baca31271e686434f381fbe3c7226f66639176.css" integrity="sha256-bNhVOmhU9IEjQ/DwyLrKMSceaGQ084H748cib2ZjkXY=">
-<script defer src="/docs/en.search.min.f0ae623ae1890754258087438e9a2a3f821aefd5d5192fc1ecbcdb1c972e669d.js" integrity="sha256-8K5iOuGJB1QlgIdDjpoqP4Ia79XVGS/B7LzbHJcuZp0="></script>
+<script defer src="/docs/en.search.min.40f8d2afdc7df377d6f57d540de59a1f02dbfa54bfea5e1c667166284b32b63c.js" integrity="sha256-QPjSr9x983fW9X1UDeWaHwLb&#43;lS/6l4cZnFmKEsytjw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -232,7 +232,13 @@ https://github.com/alex-shpak/hugo-book
     
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#layer-settings">Layer settings</a></li>
+    <li><a href="#editing-layer-data-and-settings">Editing layer data and settings</a>
+      <ul>
+        <li><a href="#layer-active">Layer Active</a></li>
+        <li><a href="#layer-name">Layer Name</a></li>
+        <li><a href="#layer-tags">Layer Tags</a></li>
+      </ul>
+    </li>
     <li><a href="#layer-export">Layer Export</a>
       <ul>
         <li><a href="#json-example">JSON example</a></li>
@@ -254,11 +260,32 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#layers">#</a>
 </h1>
 <p>Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.</p>
-<h2 id="layer-settings">
-  Layer settings
-  <a class="anchor" href="#layer-settings">#</a>
+<h2 id="editing-layer-data-and-settings">
+  Editing layer data and settings
+  <a class="anchor" href="#editing-layer-data-and-settings">#</a>
 </h2>
-<p>Layers have a few settings that will affect how they are output.</p>
+<p>You can edit the data and settings for your layer by finding it in the layer list of your asset and clicking <code>edit</code></p>
+<p><img src="/docs/img/edit-layer-link-location.png" alt="Screenshot showing the location in a layer where the edit button is located" /></p>
+<h3 id="layer-active">
+  Layer Active
+  <a class="anchor" href="#layer-active">#</a>
+</h3>
+<p>The active checkbox sets if the layer should be saved to the final output or not. If a layer you expect to show up isn&rsquo;t in your atlas check that the layer is marked as active.</p>
+<p><img src="/docs/img/edit-layer-active.png" alt="Screenshot showing where the active checkbox is located in a layer" /></p>
+<h3 id="layer-name">
+  Layer Name
+  <a class="anchor" href="#layer-name">#</a>
+</h3>
+<p>You can name your layers whatever you like. This name is exported as <code>&quot;name&quot;</code> in the json file.</p>
+<h3 id="layer-tags">
+  Layer Tags
+  <a class="anchor" href="#layer-tags">#</a>
+</h3>
+<p>You can give your layers an unlimited number of tags. Tags are a list of string values.</p>
+<blockquote class="book-hint info">
+  You may want to use tags for finding assets in your game engine. You can tag enemies with the tag <code>enemy</code> etc.
+</blockquote>
+
 <h2 id="layer-export">
   Layer Export
   <a class="anchor" href="#layer-export">#</a>
@@ -325,7 +352,13 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#layer-settings">Layer settings</a></li>
+    <li><a href="#editing-layer-data-and-settings">Editing layer data and settings</a>
+      <ul>
+        <li><a href="#layer-active">Layer Active</a></li>
+        <li><a href="#layer-name">Layer Name</a></li>
+        <li><a href="#layer-tags">Layer Tags</a></li>
+      </ul>
+    </li>
     <li><a href="#layer-export">Layer Export</a>
       <ul>
         <li><a href="#json-example">JSON example</a></li>

@@ -28,7 +28,7 @@ The project file can be saved anywhere but all the assets you add to your projec
       
       <guid>https://cuteexporter.com/docs/docs/basics/adding-files/</guid>
       <description>Adding Files to your project #  After creating a project you should add some files to it. Supported files types are:
- Photoshop files (.psd) Aseprite files (.ase or .aseprite) PNG (.png) JPEG (.jpeg)  To add a file go to your your project main page and cick Add File.
+ Photoshop files (.psd) Aseprite files (.ase or .aseprite) PNG (.png) JPEG (.jpeg)  To add a file either go to your your project main page and cick Add File. Or on the sidebar you will see a Add new file... button.
 If you aren&amp;rsquo;t on your homepage click on the Files button on the left sidebar  Alternatively, on your project main page, you can drag and drop and supported file type into the Cute Exporter window.</description>
     </item>
     
@@ -61,8 +61,8 @@ The exported files #  By default the exported files will be saved to the same fo
       
       <guid>https://cuteexporter.com/docs/docs/assets/layers/</guid>
       <description>Layers #  Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.
-Layer settings #  Layers have a few settings that will affect how they are output.
-Layer Export #  When you export your project, each active layer image is saved to the texture atlas and an entry for that layer is put in the output json file.</description>
+Editing layer data and settings #  You can edit the data and settings for your layer by finding it in the layer list of your asset and clicking edit
+Layer Active #  The active checkbox sets if the layer should be saved to the final output or not.</description>
     </item>
     
   </channel>

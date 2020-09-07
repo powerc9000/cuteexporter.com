@@ -28,7 +28,7 @@ The project file can be saved anywhere but all the assets you add to your projec
       
       <guid>https://cuteexporter.com/docs/docs/basics/adding-files/</guid>
       <description>Adding Files to your project #  After creating a project you should add some files to it. Supported files types are:
- Photoshop files (.psd) Aseprite files (.ase or .aseprite) PNG (.png) JPEG (.jpeg)  To add a file go to your your project main page and cick Add File.
+ Photoshop files (.psd) Aseprite files (.ase or .aseprite) PNG (.png) JPEG (.jpeg)  To add a file either go to your your project main page and cick Add File. Or on the sidebar you will see a Add new file... button.
 If you aren&amp;rsquo;t on your homepage click on the Files button on the left sidebar  Alternatively, on your project main page, you can drag and drop and supported file type into the Cute Exporter window.</description>
     </item>
     

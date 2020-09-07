@@ -17,8 +17,8 @@
       
       <guid>https://cuteexporter.com/docs/docs/assets/layers/</guid>
       <description>Layers #  Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.
-Layer settings #  Layers have a few settings that will affect how they are output.
-Layer Export #  When you export your project, each active layer image is saved to the texture atlas and an entry for that layer is put in the output json file.</description>
+Editing layer data and settings #  You can edit the data and settings for your layer by finding it in the layer list of your asset and clicking edit
+Layer Active #  The active checkbox sets if the layer should be saved to the final output or not.</description>
     </item>
     
   </channel>
