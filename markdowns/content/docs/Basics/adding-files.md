@@ -14,7 +14,7 @@ Supported files types are:
 * PNG (.png)
 * JPEG (.jpeg)
 
- To add a file go to your your project main page and cick `Add File`. 
+ To add a file either go to your your project main page and cick `Add File`. Or on the sidebar you will see a `Add new file...` button.
 
 ![Showing a screenshot of the `Add File` Button](/docs/img/add-file-screenshot.png)
  

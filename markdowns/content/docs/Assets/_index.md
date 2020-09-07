@@ -66,3 +66,22 @@ This checkbox will set if all the layers  in a frame (Aseprite calls this a cel)
 ![Screenshot showing an example of non-merged layers](/docs/img/unmerged-layer-example.png)
 
 
+## Layers
+Below the information about the asset is a list of its layers. You can show the layers in a grid or list view. (A PNG or ASE merged layers asset only show a single layer.)
+
+[Read more on individual layers here.]({{<ref "layers.md">}})
+
+![Screenshot showing the location of the grid and list view buttons](/docs/img/grid-list-view-location.png)
+
+
+### Grid View
+
+![Screenshot showing how grid view looks](/docs/img/grid-view.png)
+
+### List View
+
+![Screenshot showing how list view looks](/docs/img/list-view.png)
+
+In list view you can hover over a layer preview image to see it larger.
+
+![Screenshot showing the layer preview in list view](/docs/img/bigger-layer-preview.png)

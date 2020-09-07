@@ -6,8 +6,31 @@ Title: Layers
 
 Assets can have one or more children (Generically called layers). Layers are what get transformed and output into your texture atlas.
 
-## Layer settings
-Layers have a few settings that will affect how they are output.
+
+
+## Editing layer data and settings
+You can edit the data and settings for your layer by finding it in the layer list of your asset and clicking `edit`
+
+![Screenshot showing the location in a layer where the edit button is located](/docs/img/edit-layer-link-location.png)
+
+### Layer Active
+The active checkbox sets if the layer should be saved to the final output or not. If a layer you expect to show up isn't in your atlas check that the layer is marked as active.
+
+![Screenshot showing where the active checkbox is located in a layer](/docs/img/edit-layer-active.png)
+
+### Layer Name
+You can name your layers whatever you like. This name is exported as `"name"` in the json file.
+### Layer Tags
+You can give your layers an unlimited number of tags. Tags are a list of string values. 
+
+{{< hint info >}}
+
+You may want to use tags for finding assets in your game engine. You can tag enemies with the tag `enemy` etc.
+
+{{< /hint >}}
+
+
+
 
 ## Layer Export
 
