@@ -6,12 +6,12 @@ weight: 1
 
 On the landing page of Cute Exporter, click `Create Project`. 
 
-![Landing page](/docs/img/create-project-button-click.png)
+![Screenshot of landing page](../create-project-button-click.png)
 
 Choose where you would like to save your project file. The same folder as your raw PSD or Asesprite assets is a good place.
 By default it will be named `assets.db` but you can name it whatever you want.
 
-![File dialog](/docs/img/file-dialog-select.png)
+![File dialog](../file-dialog-select.png)
 
 The project file can be saved anywhere but all the assets you add to your project will be referenced relative to where your project file is saved.
 

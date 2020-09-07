@@ -8,21 +8,21 @@ Assets are your PNG, PSD, Aseprite files. Sometimes referred to as Raw Assets as
 
 The list of assets in your project is on the left hand sidebar.
 
-![Screenshot showing location of asset list](/docs/img/asset-list-location.png)
+![Screenshot showing location of asset list](asset-list-location.png)
 
 Each asset also has an icon denoting the file its file type.
 
-![Screenshot showing an individual asset listing in the asset list](/docs/img/individual_asset.png)
+![Screenshot showing an individual asset listing in the asset list](individual_asset.png)
 
 ## Refreshing an asset
 If you edit your asset while Cute Exporter is open. You can refresh Cute Exporter to show the new changes. Click the Refresh icon in the top right of the asset detail view. 
 
-![Screenshot showing the location of the refresh button](/docs/img/refresh_button_location.png)
+![Screenshot showing the location of the refresh button](refresh_button_location.png)
 
 ## Removing an asset
 You can remove an asset from your project. Click the trash can icon in the top right of the asset detail view. A confirmation modal will pop up. Click `Remove File` to confirm and remove the file from your project.
 
-![Screenshot showing the location of the remove from project button](/docs/img/remove-from-project-button.png)
+![Screenshot showing the location of the remove from project button](remove-from-project-button.png)
 
 {{< hint info >}}
 
@@ -34,7 +34,7 @@ This action will NOT delete the file on disk. IT only removes it from the list o
 
 You can view these settings in the GUI just above the list of layers in the asset
 
-![Screenshot showing the location of the asset settings in the GUI](/docs/img/asset-settings-location.png)
+![Screenshot showing the location of the asset settings in the GUI](asset-settings-location.png)
 
 ### Name
 Name of the Asset. Not currently exported into the JSON file useful for your own reference
@@ -59,11 +59,11 @@ This checkbox will set if all the layers  in a frame (Aseprite calls this a cel)
 
 ##### Merged Layers
 
-![Screenshot showing an example of merged layers](/docs/img/merged-layer-example.png)
+![Screenshot showing an example of merged layers](merged-layer-example.png)
 
 ##### Non-Merged Layers
 
-![Screenshot showing an example of non-merged layers](/docs/img/unmerged-layer-example.png)
+![Screenshot showing an example of non-merged layers](unmerged-layer-example.png)
 
 
 ## Layers
@@ -71,17 +71,17 @@ Below the information about the asset is a list of its layers. You can show the 
 
 [Read more on individual layers here.]({{<ref "layers.md">}})
 
-![Screenshot showing the location of the grid and list view buttons](/docs/img/grid-list-view-location.png)
+![Screenshot showing the location of the grid and list view buttons](grid-list-view-location.png)
 
 
 ### Grid View
 
-![Screenshot showing how grid view looks](/docs/img/grid-view.png)
+![Screenshot showing how grid view looks](grid-view.png)
 
 ### List View
 
-![Screenshot showing how list view looks](/docs/img/list-view.png)
+![Screenshot showing how list view looks](list-view.png)
 
 In list view you can hover over a layer preview image to see it larger.
 
-![Screenshot showing the layer preview in list view](/docs/img/bigger-layer-preview.png)
+![Screenshot showing the layer preview in list view](bigger-layer-preview.png)

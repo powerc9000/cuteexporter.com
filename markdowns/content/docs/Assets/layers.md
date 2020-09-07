@@ -11,12 +11,12 @@ Assets can have one or more children (Generically called layers). Layers are wha
 ## Editing layer data and settings
 You can edit the data and settings for your layer by finding it in the layer list of your asset and clicking `edit`
 
-![Screenshot showing the location in a layer where the edit button is located](/docs/img/edit-layer-link-location.png)
+![Screenshot showing the location in a layer where the edit button is located](../edit-layer-link-location.png)
 
 ### Layer Active
 The active checkbox sets if the layer should be saved to the final output or not. If a layer you expect to show up isn't in your atlas check that the layer is marked as active.
 
-![Screenshot showing where the active checkbox is located in a layer](/docs/img/edit-layer-active.png)
+![Screenshot showing where the active checkbox is located in a layer](../edit-layer-active.png)
 
 ### Layer Name
 You can name your layers whatever you like. This name is exported as `"name"` in the json file.

@@ -11,11 +11,11 @@ At some point you'll want to actually export your project to a texture atlas. Ju
 Cute Exporter also has a CLI that you can use to export your images from the command line.
 {{< /hint >}}
 
-![Showing where the export button is in the app](/docs/img/export-button.png)
+![Showing where the export button is in the app](../export-button.png)
 
 This will bring up a modal that will show you the progress of the export.
 
-![Export progress modal](/docs/img/export-modal-progress.png)
+![Export progress modal](../export-modal-progress.png)
 
 
 

@@ -16,7 +16,7 @@ Supported files types are:
 
  To add a file either go to your your project main page and cick `Add File`. Or on the sidebar you will see a `Add new file...` button.
 
-![Showing a screenshot of the `Add File` Button](/docs/img/add-file-screenshot.png)
+![Showing a screenshot of the `Add File` Button](../add-file-screenshot.png)
  
 {{< hint info >}}
 If you aren't on your homepage click on the `Files` button on the left sidebar

@@ -6,7 +6,7 @@ weight: 200
 # Project Settings
 
 There are some configurable settings for the app. You can change the settings on the right hand sidebar.
-![Location of the settings sidebar in the app](/docs/img/settings-sidebar-location.png)
+![Location of the settings sidebar in the app](settings-sidebar-location.png)
 
 ## Output Directory
 This is the folder your final exported assets will output to.
@@ -17,7 +17,7 @@ By default the output directory will be the same folder your project is saved in
 
 Click on the folder icon to change the output directory.
 
-![Location in the app of the button to change the output directory](/docs/img/output-directory-button.png)
+![Location in the app of the button to change the output directory](output-directory-button.png)
 
 ## Output Name
 This is the name of the output file your texture and JSON files will be saved as. It will be saved to the output directory.
