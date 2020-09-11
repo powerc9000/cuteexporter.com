@@ -17,7 +17,7 @@ Click on the folder icon to change the output directory.">
 <link rel="manifest" href="/docs/manifest.json">
 <link rel="icon" href="/docs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/docs/book.min.6cd8553a6854f4812343f0f0c8baca31271e686434f381fbe3c7226f66639176.css" integrity="sha256-bNhVOmhU9IEjQ/DwyLrKMSceaGQ084H748cib2ZjkXY=">
-<script defer src="/docs/en.search.min.40f8d2afdc7df377d6f57d540de59a1f02dbfa54bfea5e1c667166284b32b63c.js" integrity="sha256-QPjSr9x983fW9X1UDeWaHwLb&#43;lS/6l4cZnFmKEsytjw="></script>
+<script defer src="/docs/en.search.min.29a62e8edf0acb64f8fac29fe1d28dd407054aab3f2468a841e78115e338e7ff.js" integrity="sha256-KaYujt8Ky2T4&#43;sKf4dKN1AcFSqs/JGioQeeBFeM45/8="></script>
 <link rel="alternate" type="application/rss+xml" href="https://cuteexporter.com/docs/docs/settings/index.xml" title="Cute Exporter Docs" />
 <!--
 Made with Book Theme
@@ -236,6 +236,11 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#output-name">Output Name</a></li>
     <li><a href="#use-cache">Use Cache</a></li>
     <li><a href="#trim-alpha">Trim Alpha</a></li>
+    <li><a href="#advanced-settings">Advanced Settings</a>
+      <ul>
+        <li><a href="#custom-template-script">Custom Template Script</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -282,6 +287,47 @@ Changing this value will change the name for the PNG and JSON file.</p>
   <a class="anchor" href="#trim-alpha">#</a>
 </h2>
 <p>Cute Exporter can trim the extra alpha around your layers. This will lead to your texture atlas being more compact. There are some cases where you may not want this behavior and can uncheck this box.</p>
+<h2 id="advanced-settings">
+  Advanced Settings
+  <a class="anchor" href="#advanced-settings">#</a>
+</h2>
+<p>There are settings that may not be useful for some use cases but can really help with certain workflows.</p>
+<p><img src="advanced-settings-location.png" alt="Screenshot showing where advanced settings is" /></p>
+<h3 id="custom-template-script">
+  Custom Template Script
+  <a class="anchor" href="#custom-template-script">#</a>
+</h3>
+<p>If you want to output your data differently or in a different format other than json. You can specify your own Lua script to run to have total control over the output.</p>
+<p>To start click <code>Advanced Settings</code> make sure to check the box <code>Use a custom Lua script</code>. You can then select a Lua file that will be run.</p>
+<p><img src="advanced-settings-modal.png" alt="Screenshot showing the advanced settings modal" /></p>
+<h4 id="lua-script-specification">
+  Lua script specification
+  <a class="anchor" href="#lua-script-specification">#</a>
+</h4>
+<p>After the texture has been packed and all the export metadata is known Cute Exporter will call your script.
+Cute Exporter looks for a function called <code>onExport</code> in your Lua script. Cute Exporter will pass a data structure containing all the data that would be exported to json. The data will be a Lua table with the exact same names and layout as the default json output.</p>
+<p>The <code>doExport</code> function should return a string. The returned string will be directly saved to the output data file.</p>
+<p>The Lua script has full access and power to do anything Lua can do.
+<blockquote class="book-hint info">
+  Cute Exporter uses a Lua script internally by default to export to json.
+</blockquote>
+</p>
+<h4 id="custom-file-extension">
+  Custom file extension
+  <a class="anchor" href="#custom-file-extension">#</a>
+</h4>
+<p>When you export your own custom format you likely want to have a custom file extension rather than <code>.json</code>. You can specify your own file extension that Cute Exporter should use in your custom export script. Supply a global variable named <code>outputFileExt</code>. The file extension should not start with a period (<code>.</code>).</p>
+<p>When you set a custom file extension in your Lua script it will show up in the settings sidebar.</p>
+<p><img src="custom-extension.png" alt="Screenshot showing how the file extension for the output is now &lt;code&gt;custom&lt;/code&gt; instead of &lt;code&gt;json&lt;/code&gt;" /></p>
+<h4 id="full-example">
+  Full Example
+  <a class="anchor" href="#full-example">#</a>
+</h4>
+<p>This is a simple full example that will simply save &ldquo;hello!&rdquo; to the output data file and uses the custom file extension <code>custom</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua">outputFileExt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;custom&#34;</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">doExport</span>(data) 
+	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;hello!&#34;</span>
+<span style="color:#66d9ef">end</span></code></pre></div></p>
 </article>
  
       
@@ -320,6 +366,11 @@ Changing this value will change the name for the PNG and JSON file.</p>
     <li><a href="#output-name">Output Name</a></li>
     <li><a href="#use-cache">Use Cache</a></li>
     <li><a href="#trim-alpha">Trim Alpha</a></li>
+    <li><a href="#advanced-settings">Advanced Settings</a>
+      <ul>
+        <li><a href="#custom-template-script">Custom Template Script</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

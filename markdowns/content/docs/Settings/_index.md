@@ -38,3 +38,50 @@ If you want a full clean re-export. Delete this folder. It will be remade.
 ## Trim Alpha
 
 Cute Exporter can trim the extra alpha around your layers. This will lead to your texture atlas being more compact. There are some cases where you may not want this behavior and can uncheck this box.
+
+
+## Advanced Settings
+
+There are settings that may not be useful for some use cases but can really help with certain workflows.
+
+![Screenshot showing where advanced settings is](advanced-settings-location.png)
+
+### Custom Template Script
+
+If you want to output your data differently or in a different format other than json. You can specify your own Lua script to run to have total control over the output.
+
+To start click `Advanced Settings` make sure to check the box `Use a custom Lua script`. You can then select a Lua file that will be run.
+
+![Screenshot showing the advanced settings modal](advanced-settings-modal.png)
+
+
+
+#### Lua script specification
+
+After the texture has been packed and all the export metadata is known Cute Exporter will call your script. 
+Cute Exporter looks for a function called `onExport` in your Lua script. Cute Exporter will pass a data structure containing all the data that would be exported to json. The data will be a Lua table with the exact same names and layout as the default json output. 
+
+The `doExport` function should return a string. The returned string will be directly saved to the output data file.
+
+The Lua script has full access and power to do anything Lua can do.
+{{< hint info >}}
+Cute Exporter uses a Lua script internally by default to export to json.
+{{< /hint  >}}
+
+#### Custom file extension
+
+When you export your own custom format you likely want to have a custom file extension rather than `.json`. You can specify your own file extension that Cute Exporter should use in your custom export script. Supply a global variable named `outputFileExt`. The file extension should not start with a period (`.`).
+
+When you set a custom file extension in your Lua script it will show up in the settings sidebar.
+
+![Screenshot showing how the file extension for the output is now `custom` instead of `json`](custom-extension.png)
+
+#### Full Example
+
+This is a simple full example that will simply save "hello!" to the output data file and uses the custom file extension `custom`
+{{< highlight lua >}}
+outputFileExt = "custom"
+function doExport(data) 
+	return "hello!"
+end
+{{< / highlight >}}
